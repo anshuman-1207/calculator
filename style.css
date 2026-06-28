@@ -1,0 +1,161 @@
+/* =========================
+   Google Font & Reset
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#2563eb,#0f172a);
+}
+
+/* =========================
+   Container
+========================= */
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* =========================
+   Calculator
+========================= */
+
+.calculator{
+    width:360px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+/* =========================
+   Display
+========================= */
+
+#display{
+    width:100%;
+    height:80px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    margin-bottom:25px;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    text-align:right;
+    font-size:2.3rem;
+    padding:20px;
+    box-shadow:inset 0 3px 8px rgba(0,0,0,.25);
+}
+
+/* =========================
+   Buttons Grid
+========================= */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+/* =========================
+   Buttons
+========================= */
+
+button{
+    width:100%;
+    height:65px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    font-size:1.3rem;
+    font-weight:600;
+    cursor:pointer;
+    background:rgba(255,255,255,0.15);
+    color:#fff;
+    transition:all .3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+button:hover{
+    background:rgba(255,255,255,0.25);
+    transform:translateY(-3px);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+/* =========================
+   Operators
+========================= */
+
+.operator{
+    background:#2563eb;
+    color:#fff;
+}
+
+.operator:hover{
+    background:#1d4ed8;
+}
+
+.clear{
+    background:#ef4444;
+}
+
+.clear:hover{
+    background:#dc2626;
+}
+
+.delete{
+    background:#f59e0b;
+}
+
+.delete:hover{
+    background:#d97706;
+}
+
+.equal{
+    background:#22c55e;
+    color:#fff;
+}
+
+.equal:hover{
+    background:#16a34a;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:480px){
+
+    .calculator{
+        width:100%;
+        padding:20px;
+    }
+
+    #display{
+        height:70px;
+        font-size:2rem;
+    }
+
+    button{
+        height:60px;
+        font-size:1.1rem;
+    }
+
+}
